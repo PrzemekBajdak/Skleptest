@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="129" name="Panel użytkownika" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Testowanie funkcjonalności w panelu użytkownika</p>
+]]></details> 
+
+<testcase internalid="130" name="Przekierowanie do panelu użytkownika">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;Account&quot; przekieruje nas do panelu użytkownika.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Account&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;My account&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/my-account/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="136" name="Pozytywne logowanie do panelu użytkownika">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy użytkownikowi uda się zalogować do panelu użytkownika przy wpisaniu prawidłowego&nbsp;login/email i hasła, kt&oacute;re juz znajdują sie w bazie danych.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Klikamy w przycisk &quot;Account&quot;&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;My account&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/my-account/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W sekcji &quot;Login&quot; w dziale &quot;Username or email address&quot; wpisujemy tester@tester.pl oraz w dziale &quot;Password&quot; wpisuje&nbsp;tester@tester.pl</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zostajemy zalogowani oraz przekierowani do panelu użytkownika</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="140" name="Negatywne logowanie do panelu użytkownika">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy użytkownikowi uda się zalogować do panelu użytkownika przy wpisaniu prawidłowego&nbsp;login/email kt&oacute;re juz znajdują sie w bazie danych oraz niepoporawnego hasła</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Account&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;My account&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/my-account/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>W sekcji &quot;Login&quot; w dziale &quot;Username or email address&quot; wpisujemy tester@tester.pl oraz w dziale &quot;Password&quot; wpisujemy aaaa</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownikowi nie udało się zalogować. Otrzymujemy komunikat<br />
+<em>&quot;<strong>Error:</strong>&nbsp;The password you entered for the username&nbsp;<strong>tester@tester.pl</strong>&nbsp;is incorrect.&nbsp;<a href="https://skleptest.pl/my-account/lost-password/">Lost your password?</a>&quot;</em></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+</testsuite>

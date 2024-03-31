@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="99" name="Zakładki" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Celem testu jest sprawdzenie czy odpowiednie zakładki przekierują nas w odpowiednie sekcje</p>
+]]></details> 
+
+<testcase internalid="100" name="Przekierowanie do zakładki Shop">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;Shop&quot; przekieruje nas do sekcji shop</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Most Wanted&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Most Wanted&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Shop&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas na początkową strone.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="103" name="Przekierowanie do zakładki Most Wanted">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;Most Wanted&quot; przekieruje nas do sekcji most wanted</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Most Wanted&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Most Wanted&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/most-wanted/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="106" name="Funkcjonalność przycisku rozwijanego oraz przekierowania z podkategorii">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie rozwijanego przycisk &quot;Categories&quot; oraz przekierowania każdej podkategorii.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje sie&nbsp;stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>15.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy kursorem na &quot;Categories&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozwija się nam lista podkategorii:</p>
+
+<ul>
+	<li>All</li>
+	<li>Shirts</li>
+	<li>Featured</li>
+	<li>Trends</li>
+	<li>Scarfs</li>
+	<li>Shoes</li>
+	<li>Tops</li>
+	<li>Blouse</li>
+	<li>Jeans</li>
+	<li>Dresses</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Klikamy w sekcje &quot;All&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;All&quot; oraz widzimy wszystkie produktu, kt&oacute;re znajdują się w sklepie.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/shop</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Shirts&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Shirts&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/shirts/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Featured&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona przekierowała nas do sekcji &quot;Shirts&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+			Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+			https://skleptest.pl/product-category/featured/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Trends&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona przekierowała nas do sekcji &quot;Trends&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+			Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+			https://skleptest.pl/product-category/trends/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Scarfs&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Scarfs&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/scarfs/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Shoes&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Shoes&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/shoes/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Tops&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Tops&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/tops/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Blouse&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Blouse&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/blouse/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Jeans&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Jeans&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/jeans/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Najeżdzamy na &quot;Categories&quot; i klikamy w sekcje &quot;Dresses&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Dresses&quot; oraz widzimy wszystkie produkty z tej kategorii.<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/product-category/dresses/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="119" name="Przekierowanie do zakładki About Us">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;About us&quot; przekieruje nas do sekcji about us.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje sie&nbsp;stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;About us&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;About us&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/aboutus/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="122" name="Przekierowanie do zakładki Contact">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;Contact&quot; przekieruje nas do sekcji contact</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Klikamy w przycisk &quot;Contact&quot;&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona przekierowała nas do sekcji &quot;Contact&quot;<br />
+Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+https://skleptest.pl/contact/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+
+<testcase internalid="125" name="Przekierowanie do zakładki Blog">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Celem testu jest sprawdzenie czy przycisk &quot;Blog&quot; przekieruje nas do sekcji blog</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Klikamy w przycisk &quot;Blog&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona przekierowała nas do sekcji &quot;Blog&quot;<br />
+			Dodatkowo widoczne adres strony potwierdzający przekierowanie:<br />
+			https://skleptest.pl/blog/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms>
+	<platform>
+		<platform_id><![CDATA[3]]></platform_id>
+		<name><![CDATA[Desktop]]></name>
+		<notes><![CDATA[<p>Komputer stacjonarny/Laptop</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+	<platform>
+		<platform_id><![CDATA[4]]></platform_id>
+		<name><![CDATA[Mobile]]></name>
+		<notes><![CDATA[<p>Tablet/Telefon</p>]]></notes>
+		<enable_on_design><![CDATA[1]]></enable_on_design>
+		<enable_on_execution><![CDATA[1]]></enable_on_execution>
+	</platform>
+</platforms>
+
+</testcase>
+</testsuite>

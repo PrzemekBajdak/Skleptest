@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec SklepTest.pl - Koszyk</title>
+<link type="text/css" rel="stylesheet" href="http://localhost:8888/testlink/testlink-code-testlink_1_9_20_fixed/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://localhost:8888/testlink/testlink-code-testlink_1_9_20_fixed/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Specyfikacja testowa</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Projekt testowy: SklepTest.pl<br/>Zestaw testów: SklepTest.pl - Koszyk</p></div>
+<div class="summary"><p id="printedby">Wydrukowany przez TestLink dnia 31.03.2024</p></div>
+<div class="pagefooter" id="copyright">2021 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Spis treści</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.Koszyk</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc33">SklepTest-1: Dodanie produktu do koszyka</a></p><p style="padding-left: 45px;"><a href="#toc_tc39">SklepTest-2: Usuwanie produktu z koszyka</a></p><p style="padding-left: 45px;"><a href="#toc_tc41">SklepTest-3: Zwiększanie/Zmniejszanie ilości produktu w koszyku</a></p><p style="padding-left: 45px;"><a href="#toc_tc51">SklepTest-4: Poprawna aktualizacja ilości produktu w koszyku</a></p><p style="padding-left: 45px;"><a href="#toc_tc57">SklepTest-5: Aktualizacja produktu na zerową ilość produktu</a></p><p style="padding-left: 45px;"><a href="#toc_tc63">SklepTest-6: Przekierowanie do produktu poprzez kliknięcie w obraz</a></p><p style="padding-left: 45px;"><a href="#toc_tc68">SklepTest-7: Przekierowanie do produktu poprzez kliknięcie w nazwę</a></p><p style="padding-left: 45px;"><a href="#toc_tc75">SklepTest-8: Negatywna aktualizacja ilości produktu w koszyku</a></p><p style="padding-left: 45px;"><a href="#toc_tc80">SklepTest-9: Pozytywne sprawdzenie poprawności działania przycisku kupon</a></p><p style="padding-left: 45px;"><a href="#toc_tc85">SklepTest-10: Negatywne sprawdzenie poprawności działania przycisku kupon</a></p><p style="padding-left: 45px;"><a href="#toc_tc90">SklepTest-11: Działanie kalkulatora wysyłki</a></p><p style="padding-left: 45px;"><a href="#toc_tc132">SklepTest-19: Przekierowanie do koszyka</a></p></div><h1 class="doclevel" >Zakres</h1>
+<div class="txtlevel"><p>Tworzenie pozytywnych i negatywnych przypadk&oacute;w testowych na podstawie&nbsp;https://skleptest.pl/</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Zestaw testów : Koszyk</h1>
+<div><p>Test ma na celu sprawdzenie funkcjonalności koszyka</p>
+</div><a name="toc_tc33"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-1: Dodanie produktu do koszyka&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Test ma na celu sprawdzenie funkcjonalnośći dodawania&nbsp;produktu do koszyka</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona prawidłowo się nam otwiera</p>
+</td></tr><tr><td width="5">2</td><td><p>Scrolujemy gł&oacute;wną stronę, aż pojawią się nam produktu z przyciskiem &quot;ADD TO CART&quot;</p>
+</td><td><p>Pojawiają sie produkty razem z przyciskiem &quot;ADD TO CART&quot;</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;ADD TO CART&quot; w pierwszym produkcie z listy</p>
+</td><td><p>Produkt jest dodany do koszyka</p>
+</td></tr><tr><td width="5">4</td><td><p>Pojawia się nam przycisk &quot;View cart&quot;, kt&oacute;ry klikamy</p>
+</td><td><p>Strona przekierowuje nas do koszyka. W koszyku znajduje się dodany produkt</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc39"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-2: Usuwanie produktu z koszyka&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności usuwanie produktu z koszyka</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi mieć dodany produkt do koszyka</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;X&quot; znajdujący się obok nazwy zdjęcia i opisu wybranego przez nas produktu</p>
+</td><td><p>Produkt poprawnie usunięto z koszyka.</p>
+
+<p>Otrzymujemy komunikat<em>&nbsp; &quot;Your cart is currently empty.&quot;</em></p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc41"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-3: Zwiększanie/Zmniejszanie ilości produktu w koszyku&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności zwiększania/zmniejszania ilości danego produktu w koszyku</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;+&quot; w kolumnie &quot;Quality&quot;</p>
+</td><td><p>Liczba produktu się zwiększa</p>
+</td></tr><tr><td width="5">4</td><td><p>Klikamy w przycisk &quot;-&quot; w kolumnie &quot;Quality&quot;</p>
+</td><td><p>Liczba produktu&nbsp;się zmniejsza&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc51"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-4: Poprawna aktualizacja ilości produktu w koszyku&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przycisku &quot;UPDATE CART&quot; przy pr&oacute;bie wpisania poprawnej liczby w kolumnie ilości produkt&oacute;w w koszyku</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;+&quot; w kolumnie &quot;Quality&quot; i klikamy w przycisk &quot;UPDATE CART&quot;</p>
+</td><td><p>Liczba produktu się zwiększa oraz aktulizuje się total na wyższa liczbę</p>
+</td></tr><tr><td width="5">4</td><td><p>Klikamy w przycisk &quot;-&quot; w kolumnie &quot;Quality&quot; i klikamy w przycisk &quot;UPDATE CART&quot;</p>
+</td><td><p>Liczba produktu&nbsp;się zmniejsza oraz aktulizacuje się total na niższą liczbę</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc57"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-5: Aktualizacja produktu na zerową ilość produktu&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności zmniejszania do zerowej ilości danego produktu w koszyku</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w przycisk &quot;-&quot; w kolumnie &quot;Quality&quot; tak, by liczba wskazywała na 0 i klikamy w przycisk &quot;UPDATE CART&quot;</p>
+</td><td><p>Produkt poprawnie usuwa się z koszyka.</p>
+
+<p><br />
+Otrzymujemy komunikat &quot;Your cart is currently empty.&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc63"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-6: Przekierowanie do produktu poprzez kliknięcie w obraz&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przekierowania za pomocą obrazu</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Klikamy w obraz znajdujący się obok nazwy produktu</p>
+</td><td><p>Strona przekierowuje nas do produktu, kt&oacute;ry został dodany do koszyka</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc68"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-7: Przekierowanie do produktu poprzez kliknięcie w nazwę&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przekierowania za pomocą obrazu</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Klikamy w nazwę produktu, kt&oacute;ry znajduje się w koszyku</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona przekierowuje nas do produktu, kt&oacute;ry został dodany do koszyka</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc75"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-8: Negatywna aktualizacja ilości produktu w koszyku&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przycisku &quot;UPDATE CART&quot; przy pr&oacute;bie wpisania litery w kolumnie ilości produkt&oacute;w w koszyku</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona poprawnie się otworzyła</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>W kolumnie &quot;Quality&quot; wpisujemy&nbsp;literke &quot;p&quot;&nbsp; klikamy w przycisk &quot;UPDATE CART&quot;</p>
+</td><td><p>Wyskakuje komunikat &quot;Wpisz liczbę&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc80"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-9: Pozytywne sprawdzenie poprawności działania przycisku kupon&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przycisku odpowiadającego za realizacje kupon&oacute;w</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Wpisujemy kod rabatowy &quot;RABAT&quot; &nbsp;do formularza &quot;Coupon code&quot; i klikamy w przycisk &quot;APPLY COUPON&quot;</p>
+</td><td><p>Użytkownik dostał rabat na produkty w wysokości 20%</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc85"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-10: Negatywne sprawdzenie poprawności działania przycisku kupon&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przycisku odpowiadającego za realizacje kupon&oacute;w przy błędnym wpisywaniu kodu</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona poprawnie się otworzyła</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>Wpisujemy kod rabatowy &quot;RABAT20&quot; &nbsp;do formularza &quot;Coupon code&quot; i klikamy w przycisk &quot;APPLY COUPON&quot;</p>
+</td><td><p>Użytkownik otrzymuje komunikat&nbsp;</p>
+
+<p><em>&quot;Coupon &quot;rabat20&quot; does not exist!&quot;</em></p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc90"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-11: Działanie kalkulatora wysyłki&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie funkcjonalności przycisku &quot;Calculator shipping&quot; polegający na kalkulacji koszt&oacute;w wysyłki do danego kraju/miejscowości</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik musi posiadać produkt w koszyku</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Otwieramy stronę&nbsp;https://skleptest.pl/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>Strona poprawnie się otworzyła</p>
+</td></tr><tr><td width="5">2</td><td><p>Klikamy w przycisk &quot;My card&quot; znajdujący się w headerze lub przechodzimy na stronę&nbsp;https://skleptest.pl/cart/</p>
+</td><td><p>Strona przekierowuje nas do strony z koszykiem. W koszyku znajduje sie produktu</p>
+</td></tr><tr><td width="5">3</td><td><p>W kolumnie &quot;Cart totals&quot; klikamy w &quot;Calculate shipping&quot;</p>
+</td><td><p>Rozwija się nam sekcja i pojawiają sie możliwości do wyboru:</p>
+
+<p>- Kraje&nbsp;</p>
+
+<p>- Postcode/ZIP</p>
+
+<p>oraz przycisk &quot;Update totals&quot;</p>
+</td></tr><tr><td width="5">4</td><td><p>W sekcji kraje wybieramy &quot;Poland&quot;, a w Postcode/ZIP wpisujemy&nbsp; &quot;00-001&quot; i klikamy w przycisk &quot;Update totals&quot;</p>
+</td><td><p>Zawija się nam sekcja oraz wyskakuje poprawna kwota &quot;Flat rate:&nbsp;12&nbsp;zł&quot;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc132"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Przypadek testowy SklepTest-19: Przekierowanie do koszyka&nbsp;<span style="font-size: 80%;">[Wersja : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor przypadku:</span></td><td colspan="3">bajdak123@gmail.com</td></tr>
+<tr><td colspan="4"><span class="label">Cel testu:</span><br /><p>Celem testu jest sprawdzenie czy przycisk &quot;My cart&quot; przekieruje nas do koszyka</p>
+</td></tr><tr><td colspan="4"><span class="label">Warunki początkowe:</span><br /><p>Użytkownik przebywa na stronie&nbsp;https://skleptest.pl/</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Opis operacji:</span></td><td><span class="label">Spodziewane rezultaty:</span></td></tr><tr><td width="5">1</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Klikamy w przycisk &quot;My Cart&quot;&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><table>
+	<tbody>
+		<tr>
+			<td>
+			<p>Strona przekierowała nas do sekcji &quot;Cart&quot;<br />
+			Dodatkowo widoczne adres strony potwierdzający przekierowanie:https://skleptest.pl/cart/</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Typ wykonania:</span></td><td colspan="3">manualne</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Szacowany czas wykonania (min):</span></td><td colspan="3">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Waga:</span></td><td colspan="3">Wysoka</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Wymagania</span><td colspan="3">&nbsp;Brak<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Słowa kluczowe:</span></td><td colspan="3">&nbsp;Brak<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>
